@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CursoJS-Platzi-Descuestos</title>
+    <link rel="stylesheet" href="/css/descuentos.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Porcentajes y descuentos</h1>
+    </header>
+
+    <h2>Calcular descuento</h2>
+    <section class="">
+        <form class="">
+            <input class="" type="number" id="inputPrice"/>
+            <input class="" type="number" id="inputDiscount"/>
+            <div>
+                <label for="cupons">Cupones: </label>
+                <select class="cupons" name="cupons" id="cupons">
+                    <option value="0">No tengo</option>
+                    <option value="10">-10%</option>
+                    <option value="25">-25%</option>
+                    <option value="50">-50%</option>
+                </select>
+            </div>
+            <button type="button" onclick="onClickDiscount()">Calcular</button>
+        </form> 
+    </section>
+
+    <section>
+        <div>
+            <h3 id="product">Product</h3>
+            <p>Celular</p>
+            <br>
+            <p>Descuestos</p>
+            <h3 id="displayDiscountProduct">-00%</h3>
+        </div>
+        <br> 
+        <div>
+            <p>Precio Original</p>
+            <h3 id="displayPrice">$0000</h3>
+            <br>
+            <p>Precio con descuentos</p>
+            <h3 id="displayPriceDiscount">$0000</h3>
+            <br>
+        </div>
+        <p class="" id="displayValueDiscount"></p>
+    </section>
+
+
+    <script src="./descuentos.js"></script>
+</body>
+</html>
